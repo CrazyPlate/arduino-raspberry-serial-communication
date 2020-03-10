@@ -3,17 +3,17 @@ extern void RGBWrite(int frameLength, char inputData[], char charHolder[], int p
     int incomingDataG;
     int incomingDataB;
 
-    for (int i = 0; i < frameLength - 8; i++) {
+    for (int i = 0; i < frameLength - 14; i++) {
         inputData[i] = charHolder[i+6];
     }
     incomingDataR = (int)atoi(inputData);
 
-    for (int i = 0; i < frameLength - 8; i++) {
+    for (int i = 0; i < frameLength - 14; i++) {
         inputData[i] = charHolder[i+9];
     }
     incomingDataG = (int)atoi(inputData);
 
-    for (int i = 0; i < frameLength - 8; i++) {
+    for (int i = 0; i < frameLength - 14; i++) {
         inputData[i] = charHolder[i+12];
     }
     incomingDataB = (int)atoi(inputData);
